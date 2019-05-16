@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="{% static 'js/echarts.js' %}"></script>
+    <title>样本数据可视化</title>
+</head>
+<body>
+<div>
+<form name="visualizeform" action="{% url 'SampleManage:visualize' %}" method="post">
+    {% csrf_token %}
+    nodename: <input type="text" id="nodenameid" name="nodename" value={{ nodename }}>
+    metric:{{ form.metrics }} {{ form.errors.metrics.0 }}
+    <input type="submit" value="提交"/>
+</form>
+</div>
+ <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+    <div id="main" style="width:1980px;height:850px;"></div>
+{#    <script>#}
+{#       var nodenames =document.getElementsByName('nodename').value;#}
+{#       alert(nodenames);#}
+{#    </script>#}
+    <script type="text/javascript">
+
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // 指定图表的配置项和数据
+        var datasets = {{ list|safe }};
+        var option = {
+            title: {
+            text: "{{ nodename }}-{{ metric }}"
+            },
+            legend: {},
+            tooltip: {
+                trigger:'item',
+            },
+            dataZoom:[{
+                type:'inside',
+                start: 0,
+                end: 10
+            },{
+        start: 0,
+        end: 10,
+        handleSize: '80%',
+        handleStyle: {
+            color: '#fff',
+            shadowBlur: 3,
+            shadowColor: 'rgba(0, 0, 0, 0.6)',
+            shadowOffsetX: 2,
+            shadowOffsetY: 2
+        }
+    }],
+            dataset: {
+                // 提供一份数据。
+                source: datasets
+             },
+            // 声明一个 X 轴，类目轴（category）。默认情况下，类目轴对应到 dataset 第一列。
+            xAxis: {
+                type: 'time',
+            },
+            // 声明一个 Y 轴，数值轴。
+            yAxis: {},
+            // 声明多个 bar 系列，默认情况下，每个系列会自动对应到 dataset 的每一列。
+            series: [
+                {type: 'line'},
+            ]
+        };
+        // 使用刚指定的配置项和数据显示图表
+        option.xAxis.type = 'category'
+        myChart.setOption(option);
+        myChart.on('click', function (param) {
+            var nodename = document.getElementById('nodenameid').value;
+            var timestamp = param.name;
+            var path = nodename+'/'+timestamp;
+            window.open((path+'/retag'));
+            {#window.open ((path+'/retag'), '', 'height=200, width=700, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=n o, status=no')#}
+        });
+       </script>
+</body>
+</html>

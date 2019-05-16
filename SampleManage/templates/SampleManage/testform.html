@@ -1,0 +1,152 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="{% static 'js/echarts.js' %}"></script>
+</head>
+
+<body>
+    <div id="main" style="width: 1000px; height:800px;"></div>
+    <script>
+        var myChart = echarts.init(document.getElementById('main'));
+
+// 指定图表的配置项和数据
+var option = {
+    xAxis: {
+        data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+    },
+    yAxis: {},
+    series: [{
+        name: '销量',
+        type: 'line',
+        data: [5, 20, 36, 10, 10, 20]
+    }]
+};
+// 使用刚指定的配置项和数据显示图表。
+myChart.setOption(option);
+// 处理点击事件并且跳转到相应的百度搜索页面
+myChart.on('click', function (par) {
+    window.open('https://www.baidu.com/s?wd=' + encodeURIComponent(par.dataIndex));
+});
+
+    // 获取到这个DOM节点，然后初始化
+    {##}
+    {#var myChart = echarts.init(document.getElementById("main"));#}
+    {##}
+    {#// option 里面的内容基本涵盖你要画的图表的所有内容#}
+    {##}
+    {##}
+    {#                var option = {#}
+    {#                    backgroundColor: '#FBFBFB',#}
+    {#                    tooltip: {#}
+    {#                        trigger: 'axis'#}
+    {#                    },#}
+    {#                    legend: {#}
+    {#                        data: ['充值', '消费']#}
+    {#                    },#}
+    {##}
+    {#                    calculable: true,#}
+    {#                     xAxis: [{#}
+    {#                        axisLabel: {#}
+    {#                            rotate: 30,#}
+    {#                            interval: 0#}
+    {#                        },#}
+    {#                        axisLine: {#}
+    {#                            lineStyle: {#}
+    {#                                color: '#CECECE'#}
+    {#                            }#}
+    {#                        },#}
+    {#                        type: 'time',#}
+    {#                        boundaryGap: false,#}
+    {#                        splitLine: {#}
+    {#                            show: true,#}
+    {#                            interval: 'auto',#}
+    {#                            lineStyle: {#}
+    {#                                color: ['#FBFBFB']#}
+    {#                            }#}
+    {#                        },#}
+    {#                        axisTick: {#}
+    {#                            show: false#}
+    {#                        },#}
+    {##}
+    {#                    }],#}
+    {#                    yAxis: [{#}
+    {##}
+    {#                        type: 'value',#}
+    {#                        splitLine: {#}
+    {#                            lineStyle: {#}
+    {#                                color: ['#D4DFF5']#}
+    {#                            }#}
+    {#                        },#}
+    {#                        axisLine: {#}
+    {#                            lineStyle: {#}
+    {#                                color: '#CECECE'#}
+    {#                            }#}
+    {#                        }#}
+    {#                    }],#}
+    {##}
+    {##}
+    {#                    axisTick: {#}
+    {#                        show: false#}
+    {#                    },#}
+    {#                    series: [{#}
+    {#                        name: '充值',#}
+    {#                        type: 'line',#}
+    {#                        symbol: 'none',#}
+    {#                        smooth: 0.3,#}
+    {#                        color: ['#1e53de'],#}
+    {#                        // data:[800, 300, 500, 800, 300, 600,500,600]#}
+    {#                        data: [#}
+    {#                            [new Date("2017-01-13"), '800'],#}
+    {#                            [new Date("2017-01-18"), '300'],#}
+    {#                            [new Date("2017-02-15"), '500'],#}
+    {#                            [new Date("2017-03-10"), '300'],#}
+    {#                            [new Date("2017-03-23"), '100'],#}
+    {#                            [new Date("2017-04-03"), '400'],#}
+    {#                            [new Date("2017-05-01"), '500'],#}
+    {#                            [new Date("2017-05-09"), '200'],#}
+    {#                            [new Date("2017-05-17"), '200']#}
+    {#                        ],#}
+    {#                         lineStyle: {#}
+    {#                             normal: {#}
+    {#                                 width: 3#}
+    {#                             }#}
+    {#                         }#}
+    {##}
+    {#                    },#}
+    {#                        {#}
+    {#                            name: '消费',#}
+    {#                            type: 'line',#}
+    {#                            symbol: 'none',#}
+    {#                            smooth: 0.3,#}
+    {#                            color: ['#90EC7D'],#}
+    {#                            // data: [600, 300, 400, 200, 300, 300, 200, 400]#}
+    {#                            data: [#}
+    {#                                [new Date("2017-01-15"), '700'],#}
+    {#                                [new Date("2017-01-22"), '500'],#}
+    {#                                [new Date("2017-02-08"), '100'],#}
+    {#                                [new Date("2017-02-25"), '600'],#}
+    {#                                [new Date("2017-03-12"), '700'],#}
+    {#                                [new Date("2017-04-12"), '700'],#}
+    {#                                [new Date("2017-05-10"), '100'],#}
+    {#                                [new Date("2017-05-12"), '200']#}
+    {#                            ],#}
+    {##}
+    {#                             lineStyle: {#}
+    {#                                 normal: {#}
+    {#                                     width: 3#}
+    {#                                 }#}
+    {#                             }#}
+    {#                        }]#}
+    {#                };#}
+    {##}
+    {#// 一定不要忘了这个，具体是干啥的我忘了，官网是这样写的使用刚指定的配置项和数据显示图表。#}
+    {#myChart.setOption(option);#}
+    </script>
+</body>
+
+</html>
+

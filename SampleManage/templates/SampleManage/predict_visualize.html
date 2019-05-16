@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="{% static 'js/echarts.js' %}"></script>
+    <title>预测结果可视化</title>
+</head>
+<body>
+<form action = "{%url 'SampleManage:predict' %}" method="post">
+  {% csrf_token %}
+    nodename: <input type="text" name="nodename" value={{ nodename }}>
+    metric:{{ form.metrics }} {{ form.errors.metrics.0 }}
+    <input type="submit" value="提交">
+</form>
+<div id="main" style="width:1280px;height:500px;"></div>
+<script type="text/javascript">
+    var mycharts = echarts.init(document.getElementById('main'));
+    var x = {{ x|safe}};
+    var data = {{ y|safe }};
+    var predictdata = {{ z|safe }};
+    var  error = {{ e|safe }};
+    var option = {
+         title: {
+            text: "{{ nodename }}-{{ metric }}"
+            },
+            legend: {
+             data:['真实值','预测值','偏差'],
+            },
+            tooltip: {
+                trigger:'item',
+            },
+            dataZoom:[{
+                type:'inside',
+                start: 0,
+                end: 10
+            },{
+        start: 0,
+        end: 10,
+        handleSize: '80%',
+        handleStyle: {
+            color: '#fff',
+            shadowBlur: 3,
+            shadowColor: 'rgba(0, 0, 0, 0.6)',
+            shadowOffsetX: 2,
+            shadowOffsetY: 2
+        }
+    }],
+        xAxis: {
+            type: 'category',
+            data: x
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [{
+                name:'真实值',
+                data: data,
+                type: 'line'
+        },
+            {
+                name:'预测值',
+                data: predictdata,
+                type:'line'
+            },
+            {
+                name:'偏差',
+                data:error,
+                type:'line'
+            },
+        ]
+};
+    mycharts.setOption(option);
+</script>
+<p>ME:{{me }}</p>
+<p>MAE:{{ mae }}</p>
+<p>RMSE:{{ rmse }}</p>
+<p>MPE:{{ mpe }}</p>
+<p>MAPE:{{ mape }}</p>
+</body>
+</html>
