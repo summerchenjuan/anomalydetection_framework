@@ -1,11 +1,14 @@
 import numpy as np
 import pandas as pd
 import datetime
+from .PredictModel import PredictModel
 import matplotlib.pyplot as plt
 
-class ewma:
+class EWMA_class:
 
-    def __init__(self,df,alpha,start,end,windows,metric):
+    def __init__(self,df,metric,start,end,windows,alpha):
+        super().__init__()
+        self.name = 'EWMA'
         self.df = df
         self.alpha = alpha
         self.start = start
@@ -31,8 +34,10 @@ class ewma:
         return tp
 
     def predict(self):
-        starttime = datetime.datetime.strptime(self.start, '%Y-%m-%d %H:%M:%S')
-        endtime = datetime.datetime.strptime(self.end, '%Y-%m-%d %H:%M:%S')
+        # starttime = datetime.datetime.strptime(self.start, '%Y-%m-%d %H:%M:%S')
+        # endtime = datetime.datetime.strptime(self.end, '%Y-%m-%d %H:%M:%S')
+        starttime = self.start
+        endtime = self.end
         testdata = self.df[(self.df['timestamp']>=starttime)&(self.df['timestamp']<=endtime)]['timestamp'].tolist()
         testpredictseries = []
         for date in testdata:

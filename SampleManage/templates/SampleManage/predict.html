@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="{% static 'js/echarts.js' %}"></script>
+    <title>预测结果可视化</title>
+</head>
+<body>
+<form action = "{%url 'SampleManage:predict' %}" method="post">
+  {% csrf_token %}
+    nodename: {{ form.nodenames }} {{ form.errors.nodenames.0 }}
+    metric:{{ form.metrics }} {{ form.errors.metrics.0 }}
+    trainstart:{{ form.trainstart }} {{ form.errors.trainstart.0 }}
+    <input type="submit" value="提交">
+</form>
+<p>ME:{{me }}</p>
+<p>MAE:{{ mae }}</p>
+<p>RMSE:{{ rmse }}</p>
+<p>MPE:{{ mpe }}</p>
+<p>MAPE:{{ mape }}</p>
+</body>
+</html>

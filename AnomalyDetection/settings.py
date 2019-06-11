@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
-import Common_Sql.sql_setting
+import Common.sql_setting
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -97,11 +97,11 @@ WSGI_APPLICATION = 'AnomalyDetection.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # 数据库引擎
-        'NAME': Common_Sql.sql_setting.NAME, #数据库名称
-        'USER': Common_Sql.sql_setting.USER, # 链接数据库的用户名
-        'PASSWORD': Common_Sql.sql_setting.PASSWORD, # 链接数据库的密码
-        'HOST':Common_Sql.sql_setting.HOST, # mysql服务器的域名和ip地址
-        'PORT': Common_Sql.sql_setting.PORT, # mysql的一个端口号,默认是3306
+        'NAME': Common.sql_setting.NAME, #数据库名称
+        'USER': Common.sql_setting.USER, # 链接数据库的用户名
+        'PASSWORD': Common.sql_setting.PASSWORD, # 链接数据库的密码
+        'HOST':Common.sql_setting.HOST, # mysql服务器的域名和ip地址
+        'PORT': Common.sql_setting.PORT, # mysql的一个端口号,默认是3306
     }
 }
 
@@ -142,8 +142,12 @@ USE_L10N = False
 USE_TZ =False
 
 #add
-DATETIME_FORMAT = 'Y年n月j日 H:i:s'
+# DATETIME_FORMAT = 'Y年n月j日 H:i:s'
+DATETIME_FORMAT = 'Y-m-d H:i:s'
 
+#add
+#The maximum number of parameters that may be received via GET or POST
+# DATA_UPLOAD_MAX_NUMBER_FIELDS = None
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/

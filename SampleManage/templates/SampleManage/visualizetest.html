@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="{% static 'js/echarts.js' %}"></script>
+    <title>样本数据可视化</title>
+</head>
+<body>
+<div>
+<form name="visualizeform" action="{% url 'SampleManage:visualize' %}" method="post">
+    {% csrf_token %}
+    nodename:{{ form.nodenames }} {{ form.errors.nodenames.0 }}
+    metric:{{ form.metrics }} {{ form.errors.metrics.0 }}
+    <input type="submit" value="提交"/>
+</form>
+</div>
+ <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+    <div id="main" style="width:1980px;height:850px;"></div>
+    <script type="text/javascript">
+        var anchor = [
+            {name:'2018-11-01', value:['2018-11-01', 0]},
+            {name:'2019-01-01', value:['2019-01-01', 0]}
+        ];
+        var myChart = echarts.init(document.getElementById('main'));
+        var datasets = {{ list|safe }};
+        var option = {
+            title: {
+            text: "{{ nodename }}-{{ metric }}"
+            },
+            legend: {},
+            tooltip: {
+                trigger:'axis',
+            },
+            dataZoom:[{
+                type:'inside',
+                start: 0,
+                end: 100,
+            },{
+        start: 0,
+        end: 10,
+        handleSize: '80%',
+        handleStyle: {
+            color: '#fff',
+            shadowBlur: 3,
+            shadowColor: 'rgba(0, 0, 0, 0.6)',
+            shadowOffsetX: 2,
+            shadowOffsetY: 2
+        }
+    }],
+            xAxis: {
+                    type:"time",
+                    splitNumber: 10,
+                    axisLabel: {
+                        // rotate: 60,
+                        textStyle: {
+                        fontSize: 8
+                    }
+                 }
+            },
+            // 声明一个 Y 轴，数值轴。
+            yAxis: {},
+            // 声明多个 bar 系列，默认情况下，每个系列会自动对应到 dataset 的每一列。
+            series: [
+                {
+                    data:datasets,
+                    type: 'line',
+                },
+                {
+                    name:'.anchor',
+                    type:'line',
+                    showSymbol:false,
+                    data:anchor,
+                }
+            ]
+        };
+        // 使用刚指定的配置项和数据显示图表
+        myChart.setOption(option);
+        myChart.on('click', function (param) {
+            var nodename = document.getElementById('nodenameid').value;
+            var timestamp = param.name;
+            var path = nodename+'/'+timestamp;
+            window.open((path+'/retag'));
+            {#window.open ((path+'/retag'), '', 'height=200, width=700, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=n o, status=no')#}
+        });
+       </script>
+</body>
+</html>

@@ -10,5 +10,6 @@ urlpatterns = [
      path('visualize',views.visualize,name='visualize'),
      path('predict',views.predict,name='predict'),
      path('<path:pathtest>/retag',views.retag,name='retag'),
-     path('saveretag',views.savetag,name='saveretag')
+     path('train',views.train,name='train'),
+     path('mulvisualize',views.mulvisualize,name='mulvisualize')
 ]

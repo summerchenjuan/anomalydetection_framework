@@ -1,10 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/algorithm/univariate_predictor/ewma.py" line="35" />
+    <bookmark url="file://$PROJECT_DIR$/algorithm/univariate_predictor/ewma.py" line="40" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40bc9996-ac5d-4a93-838e-6d0722aac28e" name="Default Changelist" comment="" />
+    <list default="true" id="40bc9996-ac5d-4a93-838e-6d0722aac28e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/configration.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/sql_setting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SampleManage/migrations/0002_metric_nodename.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SampleManage/migrations/0003_auto_20190523_1630.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SampleManage/migrations/0004_auto_20190524_1032.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SampleManage/migrations/0005_auto_20190528_1440.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SampleManage/migrations/0006_algorithm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SampleManage/migrations/0007_predictmethod.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SampleManage/migrations/0008_auto_20190609_2200.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SampleManage/migrations/0009_mulvisualize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SampleManage/migrations/0010_auto_20190611_1057.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SampleManage/templates/SampleManage/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SampleManage/templates/SampleManage/mulvisualize.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SampleManage/templates/SampleManage/predict.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SampleManage/templates/SampleManage/train.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SampleManage/templates/SampleManage/visualizetest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SampleManage/templates/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SampleManage/tsne.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/detection/Iforest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/detection/Nsigma.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/detection/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/univariate_predictor/PredictModel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/univariate_predictor/evaluation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_model.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/jquery/jquery-3.4.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/jquery/jquery-3.4.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnomalyDetection/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnomalyDetection/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common_Sql/sql_setting.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleManage/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/SampleManage/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleManage/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/SampleManage/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleManage/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/SampleManage/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleManage/migrations/0002_auto_20190429_1327.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleManage/migrations/0003_auto_20190505_1616.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleManage/migrations/0004_auto_20190505_1619.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleManage/migrations/0005_metric.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleManage/migrations/0006_auto_20190505_1743.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleManage/migrations/0007_auto_20190516_1050.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleManage/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/SampleManage/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleManage/modelsql.py" beforeDir="false" afterPath="$PROJECT_DIR$/SampleManage/modelsql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleManage/templates/SampleManage/predict_visualize.html" beforeDir="false" afterPath="$PROJECT_DIR$/SampleManage/templates/SampleManage/predict_visualize.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleManage/templates/SampleManage/visualize.html" beforeDir="false" afterPath="$PROJECT_DIR$/SampleManage/templates/SampleManage/visualize.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleManage/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/SampleManage/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleManage/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/SampleManage/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/evaluation/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/evaluation/evaluation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/univariate_predictor/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/univariate_predictor/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/univariate_predictor/ewma.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/univariate_predictor/ewma.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/univariate_predictor/lstm.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/univariate_predictor/lstm.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,52 +64,80 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/AnomalyDetection$manage.coverage" NAME="manage Coverage Results" MODIFIED="1557975498950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AnomalyDetection$PredictModel.coverage" NAME="PredictModel Coverage Results" MODIFIED="1559217670297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/univariate_predictor" />
+    <SUITE FILE_PATH="coverage/AnomalyDetection$tsne.coverage" NAME="tsne Coverage Results" MODIFIED="1560080564021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm" />
+    <SUITE FILE_PATH="coverage/AnomalyDetection$test.coverage" NAME="test Coverage Results" MODIFIED="1558316536613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AnomalyDetection$manage.coverage" NAME="manage Coverage Results" MODIFIED="1560222210074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AnomalyDetection$tsne__1_.coverage" NAME="tsne (1) Coverage Results" MODIFIED="1560081228698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SampleManage" />
     <SUITE FILE_PATH="coverage/AnomalyDetection$models.coverage" NAME="models Coverage Results" MODIFIED="1556513118352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SampleManage" />
-    <SUITE FILE_PATH="coverage/AnomalyDetection$evaluation.coverage" NAME="evaluation Coverage Results" MODIFIED="1557147252815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/evaluation" />
+    <SUITE FILE_PATH="coverage/AnomalyDetection$modelsql.coverage" NAME="modelsql Coverage Results" MODIFIED="1558939919812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SampleManage" />
+    <SUITE FILE_PATH="coverage/AnomalyDetection$evaluation.coverage" NAME="evaluation Coverage Results" MODIFIED="1559474583416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/evaluation" />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/predict_visualize.html">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="625">
+                    <caret line="63" column="31" lean-forward="true" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
+                    <folding>
+                      <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1925516285">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="4" />
-          <entry key="html" value="2806" />
-          <entry key="py" value="15509" />
-          <entry key="py@AnomalyDetection" value="296" />
+          <entry key="html" value="5107" />
+          <entry key="py" value="32026" />
+          <entry key="py@AnomalyDetection" value="445" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CommandLine" value="197" />
-          <entry key="HTML" value="2806" />
-          <entry key="PLAIN_TEXT" value="103" />
-          <entry key="Python" value="15509" />
+          <entry key="CommandLine" value="292" />
+          <entry key="HTML" value="5107" />
+          <entry key="PLAIN_TEXT" value="157" />
+          <entry key="Python" value="32026" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="28" />
-          <entry key="js" value="4" />
-          <entry key="py" value="46" />
+          <entry key="html" value="54" />
+          <entry key="js" value="6" />
+          <entry key="py" value="116" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="28" />
-          <entry key="JavaScript" value="4" />
-          <entry key="Python" value="46" />
+          <entry key="HTML" value="54" />
+          <entry key="JavaScript" value="6" />
+          <entry key="Python" value="116" />
         </counts>
       </usages-collector>
     </session>
@@ -67,53 +147,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SampleManage/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="53" column="55" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
+            <state relative-caret-position="284">
+              <caret line="236" column="40" lean-forward="true" selection-start-line="236" selection-start-column="40" selection-end-line="236" selection-end-column="40" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1557988079873" expanded="true" signature="2776:2778" ph="..." />
-                <marker date="1557988079873" expanded="true" signature="4346:4739" ph="..." />
-                <marker date="1557988079873" expanded="true" signature="6690:6764" ph="..." />
+                <marker date="1560257618255" expanded="true" signature="3258:3260" ph="..." />
+                <marker date="1560257618255" expanded="true" signature="4969:4972" ph="..." />
+                <marker date="1560257618255" expanded="true" signature="12949:12954" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SampleManage/admin.py">
+        <entry file="file://$PROJECT_DIR$/algorithm/detection/Iforest.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/algorithm/detection/Nsigma.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="336">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
-                <marker date="1557985417822" expanded="true" signature="537:538" ph="..." />
+                <marker date="1559786323075" expanded="true" signature="184:215" ph="..." />
+                <marker date="1559786323075" expanded="true" signature="238:239" ph="..." />
+                <marker date="1559786323075" expanded="true" signature="238:247" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/algorithm/evaluation/evaluation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-              <folding>
-                <marker date="1557148815518" expanded="true" signature="38:120" ph="..." />
-                <marker date="1557148815518" expanded="true" signature="142:347" ph="..." />
-                <marker date="1557148815518" expanded="true" signature="479:571" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/retag.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -121,46 +184,43 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SampleManage/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-705">
-              <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+            <state relative-caret-position="469">
+              <caret line="129" column="69" selection-start-line="129" selection-start-column="69" selection-end-line="129" selection-end-column="69" />
               <folding>
-                <element signature="e#1440#1520#0" />
-                <marker date="1557974996043" expanded="true" signature="374:379" ph="..." />
-                <marker date="1557974996043" expanded="true" signature="3179:3270" ph="..." />
-                <marker date="1557974996043" expanded="true" signature="3300:3504" ph="..." />
+                <marker date="1560221863640" expanded="true" signature="384:389" ph="..." />
+                <marker date="1560221863640" expanded="true" signature="3769:3995" ph="..." />
+                <marker date="1560221863640" expanded="true" signature="3900:3995" ph="..." />
+                <marker date="1560221863640" expanded="true" signature="4083:4088" ph="..." />
+                <marker date="1560221863640" expanded="true" signature="4761:4762" ph="..." />
+                <marker date="1560221863640" expanded="true" signature="5038:5039" ph="..." />
+                <marker date="1560221863640" expanded="true" signature="5038:5041" ph="..." />
+                <marker date="1560221863640" expanded="true" signature="5038:5042" ph="..." />
+                <marker date="1560221863640" expanded="true" signature="5038:5043" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/predict_visualize.html">
+        <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/mulvisualize.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-801">
-              <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SampleManage/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+            <state relative-caret-position="186">
+              <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/visualize.html">
+        <entry file="file://$PROJECT_DIR$/SampleManage/modelsql.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="76" column="41" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
+            <state relative-caret-position="285">
+              <caret line="51" column="38" lean-forward="true" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
               <folding>
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1560255886079" expanded="true" signature="166:231" ph="..." />
+                <marker date="1560255886079" expanded="true" signature="900:1292" ph="..." />
               </folding>
             </state>
           </provider>
@@ -169,11 +229,63 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SampleManage/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="336">
+              <caret line="145" column="42" lean-forward="true" selection-start-line="145" selection-start-column="42" selection-end-line="145" selection-end-column="42" />
               <folding>
-                <element signature="e#0#44#0" expanded="true" />
-                <marker date="1557986667058" expanded="true" signature="229:234" ph="..." />
+                <element signature="e#0#24#0" expanded="true" />
+                <element signature="e#733#1617#0" />
+                <element signature="e#843#916#0" />
+                <element signature="e#1072#1144#0" />
+                <element signature="e#1260#1332#0" />
+                <element signature="e#1652#4173#0" />
+                <marker date="1560256127453" expanded="true" signature="400:405" ph="..." />
+                <marker date="1560256127453" expanded="true" signature="690:716" ph="..." />
+                <marker date="1560256127453" expanded="true" signature="1661:4189" ph="..." />
+                <marker date="1560256127453" expanded="false" signature="4212:4217" ph="..." />
+                <marker date="1560256127453" expanded="true" signature="4549:4554" ph="..." />
+                <marker date="1560256127453" expanded="true" signature="6828:6829" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-75">
+              <folding>
+                <element signature="e#84#93#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/algorithm/univariate_predictor/lstm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="364" column="47" selection-start-line="364" selection-start-column="47" selection-end-line="364" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#13798#14724#0" />
+                <element signature="e#15270#15870#0" />
+                <marker date="1560256975121" expanded="false" signature="308:313" ph="..." />
+                <marker date="1560256975121" expanded="true" signature="621:1688" ph="..." />
+                <marker date="1560256975121" expanded="false" signature="1719:1728" ph="..." />
+                <marker date="1560256975121" expanded="true" signature="14505:15361" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/algorithm/univariate_predictor/evaluation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1775">
+              <caret line="71" selection-start-line="71" selection-end-line="71" selection-end-column="19" />
+              <folding>
+                <marker date="1559474583374" expanded="true" signature="58:146" ph="..." />
+                <marker date="1559474583374" expanded="true" signature="1916:1917" ph="..." />
               </folding>
             </state>
           </provider>
@@ -184,32 +296,54 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>static</find>
-      <find>middleware.csrf.C</find>
-      <find>data</find>
-      <find>INSTA</find>
       <find>zone</find>
       <find>da</find>
       <find>use_</find>
-      <find>database</find>
       <find>tem</find>
       <find>django.middleware.csrf.CsrfViewMiddleware</find>
       <find>appen</find>
       <find>insta</find>
       <find>CharField(max_length=100,null=True)</find>
       <find>(max_digits=15, decimal_places=2, null=True)</find>
+      <find>database</find>
+      <find>test</find>
+      <find>app</find>
+      <find>prin</find>
+      <find>PRI</find>
+      <find>PRINT</find>
+      <find>name</find>
+      <find>nodenameid</find>
+      <find>attr</find>
+      <find>print</find>
+      <find>metric</find>
+      <find>modelsql</find>
+      <find>value</find>
+      <find>minma</find>
+      <find>path</find>
+      <find>load_model</find>
+      <find>train</find>
+      <find>scaler</find>
+      <find>start</find>
+      <find>train_data</find>
+      <find>train_data_x</find>
     </findStrings>
     <replaceStrings>
       <replace>DecimalField(max_digits=15,decimal_places=3,null=True)</replace>
       <replace>(max_length=20,null=True)</replace>
+      <replace>metric</replace>
+      <replace>metriclist</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -219,7 +353,6 @@
         <option value="$PROJECT_DIR$/SampleManage/apps.py" />
         <option value="$PROJECT_DIR$/AnomalyDetection/__init__.py" />
         <option value="$PROJECT_DIR$/SampleManage/migrations/__init__.py" />
-        <option value="$PROJECT_DIR$/Common_Sql/sql_setting.py" />
         <option value="$PROJECT_DIR$/SampleManage/templates/SampleManage/te.html" />
         <option value="$PROJECT_DIR$/templates/SampleManage/index.html" />
         <option value="$PROJECT_DIR$/SampleManage/templates/SampleManage/sample.html" />
@@ -233,20 +366,39 @@
         <option value="$PROJECT_DIR$/../Predictor/EWMA/ewa.py" />
         <option value="$PROJECT_DIR$/algorithm/Predictor/prealgorithm.py" />
         <option value="$PROJECT_DIR$/algorithm/Predictor/ewma.py" />
-        <option value="$PROJECT_DIR$/SampleManage/modelsql.py" />
-        <option value="$PROJECT_DIR$/algorithm/evaluation/evaluation.py" />
-        <option value="$PROJECT_DIR$/algorithm/univariate_predictor/ewma.py" />
-        <option value="$PROJECT_DIR$/algorithm/univariate_predictor/lstm.py" />
-        <option value="$PROJECT_DIR$/SampleManage/templates/SampleManage/testform.html" />
-        <option value="$PROJECT_DIR$/SampleManage/templates/SampleManage/predict_visualize.html" />
-        <option value="$PROJECT_DIR$/SampleManage/urls.py" />
-        <option value="$PROJECT_DIR$/SampleManage/models.py" />
-        <option value="$PROJECT_DIR$/AnomalyDetection/settings.py" />
         <option value="$PROJECT_DIR$/SampleManage/templates/SampleManage/retag.html" />
-        <option value="$PROJECT_DIR$/SampleManage/admin.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/algorithm/Detection/Nsigma.py" />
+        <option value="$PROJECT_DIR$/Common_Sql/sql_setting.py" />
+        <option value="$PROJECT_DIR$/SampleManage/migrations/0001_initial.py" />
+        <option value="$PROJECT_DIR$/SampleManage/migrations/0002_metric_nodename.py" />
+        <option value="$PROJECT_DIR$/SampleManage/templates/SampleManage/testchoiceform.html" />
+        <option value="$PROJECT_DIR$/SampleManage/templates/SampleManage/visualizetest.html" />
+        <option value="$PROJECT_DIR$/algorithm/univariate_predictor/__init__.py" />
+        <option value="$PROJECT_DIR$/configration.py" />
+        <option value="$PROJECT_DIR$/Common/configration.py" />
+        <option value="$PROJECT_DIR$/algorithm/univariate_predictor/PredictModel.py" />
+        <option value="$PROJECT_DIR$/SampleManage/templates/SampleManage/train_predict.html" />
+        <option value="$PROJECT_DIR$/AnomalyDetection/settings.py" />
+        <option value="$PROJECT_DIR$/algorithm/evaluation/evaluation.py" />
+        <option value="$PROJECT_DIR$/SampleManage/templates/SampleManage/testform.html" />
+        <option value="$PROJECT_DIR$/SampleManage/templates/SampleManage/testjquery.html" />
         <option value="$PROJECT_DIR$/SampleManage/templates/SampleManage/visualize.html" />
+        <option value="$PROJECT_DIR$/SampleManage/templates/SampleManage/train.html" />
+        <option value="$PROJECT_DIR$/algorithm/univariate_predictor/ewma.py" />
+        <option value="$PROJECT_DIR$/algorithm/detection/Nsigma.py" />
+        <option value="$PROJECT_DIR$/algorithm/tsne.py" />
+        <option value="$PROJECT_DIR$/SampleManage/tsne.py" />
+        <option value="$PROJECT_DIR$/SampleManage/urls.py" />
+        <option value="$PROJECT_DIR$/SampleManage/admin.py" />
+        <option value="$PROJECT_DIR$/SampleManage/templates/SampleManage/predict_visualize.html" />
+        <option value="$PROJECT_DIR$/SampleManage/templates/SampleManage/mulvisualize.html" />
+        <option value="$PROJECT_DIR$/SampleManage/models.py" />
+        <option value="$PROJECT_DIR$/SampleManage/modelsql.py" />
         <option value="$PROJECT_DIR$/SampleManage/forms.py" />
+        <option value="$PROJECT_DIR$/algorithm/univariate_predictor/lstm.py" />
         <option value="$PROJECT_DIR$/SampleManage/views.py" />
+        <option value="$PROJECT_DIR$/algorithm/detection/Iforest.py" />
       </list>
     </option>
   </component>
@@ -256,18 +408,18 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-19" />
-    <option name="y" value="89" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="33" />
+    <option name="y" value="26" />
     <option name="width" value="1792" />
     <option name="height" value="980" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -284,7 +436,7 @@
               <item name="AnomalyDetection" type="b2602c69:ProjectViewProjectNode" />
               <item name="AnomalyDetection" type="462c0819:PsiDirectoryNode" />
               <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="evaluation" type="462c0819:PsiDirectoryNode" />
+              <item name="detection" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AnomalyDetection" type="b2602c69:ProjectViewProjectNode" />
@@ -300,7 +452,18 @@
             <path>
               <item name="AnomalyDetection" type="b2602c69:ProjectViewProjectNode" />
               <item name="AnomalyDetection" type="462c0819:PsiDirectoryNode" />
+              <item name="Common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AnomalyDetection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnomalyDetection" type="462c0819:PsiDirectoryNode" />
               <item name="SampleManage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AnomalyDetection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnomalyDetection" type="462c0819:PsiDirectoryNode" />
+              <item name="SampleManage" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AnomalyDetection" type="b2602c69:ProjectViewProjectNode" />
@@ -314,11 +477,23 @@
               <item name="SampleManage" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="SampleManage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AnomalyDetection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnomalyDetection" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AnomalyDetection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnomalyDetection" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="jquery" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -331,17 +506,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IHEP\PycharmProject\AnomalyDetection\static" />
-      <recent name="D:\IHEP\PycharmProject\AnomalyDetection\SampleManage\static\SampleManage" />
-      <recent name="D:\IHEP\PycharmProject\AnomalyDetection\statics\bootstrap-4.1.3-dist\css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IHEP\PycharmProject\AnomalyDetection\static\jquery" />
       <recent name="D:\IHEP\PycharmProject\AnomalyDetection\SampleManage\static\js" />
       <recent name="D:\IHEP\PycharmProject\AnomalyDetection\SampleManage\static" />
       <recent name="D:\IHEP\PycharmProject\AnomalyDetection\SampleManage\templates\SampleManage" />
       <recent name="D:\IHEP\PycharmProject\AnomalyDetection\templates\SampleManage" />
-      <recent name="D:\IHEP\PycharmProject\AnomalyDetection\SampleManage\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IHEP\PycharmProject\AnomalyDetection\SampleManage" />
+      <recent name="D:\IHEP\PycharmProject\AnomalyDetection\SampleManage\templates\SampleManage" />
+      <recent name="D:\IHEP\PycharmProject\AnomalyDetection\algorithm\univariate_predictor" />
+      <recent name="D:\IHEP\PycharmProject\AnomalyDetection\static" />
+      <recent name="D:\IHEP\PycharmProject\AnomalyDetection\SampleManage\static\SampleManage" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -357,6 +534,28 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.manage">
+    <configuration name="PredictModel" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AnomalyDetection" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/univariate_predictor" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/univariate_predictor/PredictModel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="evaluation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AnomalyDetection" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -370,7 +569,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/evaluation/evaluation.py" />
+      <option name="SCRIPT_NAME" value="D:\IHEP\PycharmProject\AnomalyDetection\algorithm\univariate_predictor\evaluation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -401,7 +600,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="models" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="tsne (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AnomalyDetection" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -414,7 +613,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SampleManage/models.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SampleManage/tsne.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tsne" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AnomalyDetection" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\IHEP\PycharmProject\AnomalyDetection\SampleManage\tsne.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -449,14 +670,18 @@
     <list>
       <item itemvalue="Django server.AnomalyDetection" />
       <item itemvalue="Python.manage" />
-      <item itemvalue="Python.models" />
       <item itemvalue="Python.evaluation" />
+      <item itemvalue="Python.PredictModel" />
+      <item itemvalue="Python.tsne" />
+      <item itemvalue="Python.tsne (1)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.manage" />
+        <item itemvalue="Python.tsne (1)" />
+        <item itemvalue="Python.tsne" />
         <item itemvalue="Python.evaluation" />
-        <item itemvalue="Python.models" />
+        <item itemvalue="Python.PredictModel" />
       </list>
     </recent_temporary>
   </component>
@@ -474,25 +699,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-19" y="89" width="1792" height="980" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49825174" visible="true" weight="0.23210162" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49825174" visible="true" weight="0.21641791" />
       <window_info id="Structure" order="1" sideWeight="0.50174826" side_tool="true" weight="0.22647887" />
       <window_info id="Favorites" order="2" sideWeight="0.5008264" side_tool="true" weight="0.21231672" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23113208" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41603467" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39905548" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="manage.py@AnomalyDetection" order="10" weight="0.3254717" />
+      <window_info anchor="bottom" id="manage.py@AnomalyDetection" order="10" weight="0.29634002" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.32900944" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -500,112 +724,29 @@
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49917355" visible="true" weight="0.21428572" />
-      <window_info id="Structure" order="1" sideWeight="0.5008264" side_tool="true" weight="0.21231672" />
-      <window_info id="Favorites" order="2" sideWeight="0.5008264" side_tool="true" weight="0.21231672" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21212122" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="manage.py@AnomalyDetection" order="10" weight="0.32575756" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32900944" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/bootstrap/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/views/debug.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="330" column="86" selection-start-line="330" selection-start-column="86" selection-end-line="330" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AnomalyDetection/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common_Sql/sql_setting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SampleManage/templates/test.html" />
-    <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/te.html" />
-    <entry file="file://$PROJECT_DIR$/templates/SampleManage/sample.html" />
-    <entry file="file://$PROJECT_DIR$/templates/SampleManage/index1.html" />
-    <entry file="file://$PROJECT_DIR$/templates/SampleManage/test.html" />
-    <entry file="file://$PROJECT_DIR$/SampleManage/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-657" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SampleManage/migrations/0004_auto_20190425_1646.py" />
-    <entry file="file://$PROJECT_DIR$/SampleManage/migrations/0003_auto_20190425_1611.py" />
-    <entry file="file://$PROJECT_DIR$/SampleManage/migrations/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AnomalyDetection/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SampleManage/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SampleManage/static/apache-echarts-4.2.1-incubating-src/src/data/helper/linkList.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/echarts.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$USER_HOME$/Anaconda3/envs/Django/Lib/site-packages/django/db/models/fields/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -614,29 +755,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SampleManage/format.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/resultechart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="981">
-          <caret line="71" column="7" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/univariate_predictor/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleManage/format.py" />
     <entry file="file://$PROJECT_DIR$/../Predictor/EWMA/ewa.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -651,91 +770,184 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/resultechart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1547">
+          <caret line="71" column="7" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/sample.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="28" />
+        <state relative-caret-position="375">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/univariate_predictor/ewma.py">
+    <entry file="file://$PROJECT_DIR$/test.py" />
+    <entry file="file://$PROJECT_DIR$/algorithm/detection/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/sql_setting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="100">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleManage/migrations/0005_metric.py" />
+    <entry file="file://$PROJECT_DIR$/SampleManage/migrations/0006_auto_20190505_1743.py" />
+    <entry file="file://$PROJECT_DIR$/SampleManage/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleManage/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleManage/migrations/0002_metric_nodename.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="21" column="12" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="21" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleManage/migrations/0003_auto_20190523_1630.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-150" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/testchoiceform.html" />
+    <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/visualizetest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1475">
+          <caret line="74" column="13" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1557468788685" expanded="true" signature="100:105" ph="..." />
-            <marker date="1557468788685" expanded="true" signature="158:344" ph="..." />
-            <marker date="1557468788685" expanded="true" signature="819:825" ph="..." />
-            <marker date="1557468788685" expanded="true" signature="1363:1364" ph="..." />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/testform.html">
+    <entry file="file://$PROJECT_DIR$/algorithm/univariate_predictor/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="32" column="3" lean-forward="true" selection-start-line="30" selection-end-line="32" selection-end-column="3" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state>
+          <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/univariate_predictor/lstm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="61" column="29" lean-forward="true" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <marker date="1557470257026" expanded="true" signature="138:143" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SampleManage/modelsql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="24" column="69" lean-forward="true" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="69" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-            <marker date="1557137794877" expanded="true" signature="149:214" ph="..." />
-            <marker date="1557137794877" expanded="true" signature="262:661" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SampleManage/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-705">
-          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-          <folding>
-            <element signature="e#1440#1520#0" />
-            <marker date="1557974996043" expanded="true" signature="374:379" ph="..." />
-            <marker date="1557974996043" expanded="true" signature="3179:3270" ph="..." />
-            <marker date="1557974996043" expanded="true" signature="3300:3504" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/configration.py" />
     <entry file="file://$PROJECT_DIR$/AnomalyDetection/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-178">
-          <caret line="132" column="7" selection-start-line="132" selection-start-column="7" selection-end-line="132" selection-end-column="7" />
+        <state relative-caret-position="13">
+          <caret line="105" column="1" lean-forward="true" selection-start-line="105" selection-start-column="1" selection-end-line="105" selection-end-column="1" />
           <folding>
             <element signature="e#315#324#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/evaluation/evaluation.py">
+    <entry file="file://$PROJECT_DIR$/algorithm/evaluation/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/Common/configration.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        <state relative-caret-position="367">
+          <caret line="140" column="18" selection-start-line="140" selection-start-column="18" selection-end-line="140" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/jquery/jquery-3.4.1.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/jquery/jquery-3.4.1.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/testjquery.html" />
+    <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/testform.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/predict.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/retag.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/train.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/visualize.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
           <folding>
-            <marker date="1557148815518" expanded="true" signature="38:120" ph="..." />
-            <marker date="1557148815518" expanded="true" signature="142:347" ph="..." />
-            <marker date="1557148815518" expanded="true" signature="479:571" ph="..." />
+            <marker date="1559720603283" expanded="true" signature="303:387" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleManage/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/univariate_predictor/ewma.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1559784520789" expanded="true" signature="145:150" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/univariate_predictor/PredictModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding>
+            <marker date="1559296140686" expanded="true" signature="19:24" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleManage/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleManage/tsne.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="13" column="64" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -743,7 +955,7 @@
     <entry file="file://$PROJECT_DIR$/SampleManage/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <caret line="13" column="64" lean-forward="true" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -752,59 +964,147 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SampleManage/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="297">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="42" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
-            <marker date="1557985417822" expanded="true" signature="537:538" ph="..." />
+            <marker date="1560084711493" expanded="true" signature="673:714" ph="..." />
+            <marker date="1560084711493" expanded="true" signature="1034:1289" ph="..." />
+            <marker date="1560084711493" expanded="true" signature="1290:1291" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/predict_visualize.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-801">
-          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/retag.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/visualize.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="76" column="41" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
+        <state relative-caret-position="625">
+          <caret line="63" column="31" lean-forward="true" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/mulvisualize.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleManage/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="129" column="69" selection-start-line="129" selection-start-column="69" selection-end-line="129" selection-end-column="69" />
+          <folding>
+            <marker date="1560221863640" expanded="true" signature="384:389" ph="..." />
+            <marker date="1560221863640" expanded="true" signature="3769:3995" ph="..." />
+            <marker date="1560221863640" expanded="true" signature="3900:3995" ph="..." />
+            <marker date="1560221863640" expanded="true" signature="4083:4088" ph="..." />
+            <marker date="1560221863640" expanded="true" signature="4761:4762" ph="..." />
+            <marker date="1560221863640" expanded="true" signature="5038:5039" ph="..." />
+            <marker date="1560221863640" expanded="true" signature="5038:5041" ph="..." />
+            <marker date="1560221863640" expanded="true" signature="5038:5042" ph="..." />
+            <marker date="1560221863640" expanded="true" signature="5038:5043" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleManage/modelsql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="51" column="38" lean-forward="true" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
+          <folding>
+            <marker date="1560255886079" expanded="true" signature="166:231" ph="..." />
+            <marker date="1560255886079" expanded="true" signature="900:1292" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SampleManage/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="336">
+          <caret line="145" column="42" lean-forward="true" selection-start-line="145" selection-start-column="42" selection-end-line="145" selection-end-column="42" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
-            <marker date="1557986667058" expanded="true" signature="229:234" ph="..." />
+            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#733#1617#0" />
+            <element signature="e#843#916#0" />
+            <element signature="e#1072#1144#0" />
+            <element signature="e#1260#1332#0" />
+            <element signature="e#1652#4173#0" />
+            <marker date="1560256127453" expanded="true" signature="400:405" ph="..." />
+            <marker date="1560256127453" expanded="true" signature="690:716" ph="..." />
+            <marker date="1560256127453" expanded="true" signature="1661:4189" ph="..." />
+            <marker date="1560256127453" expanded="false" signature="4212:4217" ph="..." />
+            <marker date="1560256127453" expanded="true" signature="4549:4554" ph="..." />
+            <marker date="1560256127453" expanded="true" signature="6828:6829" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <folding>
+            <element signature="e#84#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/univariate_predictor/lstm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="364" column="47" selection-start-line="364" selection-start-column="47" selection-end-line="364" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#13798#14724#0" />
+            <element signature="e#15270#15870#0" />
+            <marker date="1560256975121" expanded="false" signature="308:313" ph="..." />
+            <marker date="1560256975121" expanded="true" signature="621:1688" ph="..." />
+            <marker date="1560256975121" expanded="false" signature="1719:1728" ph="..." />
+            <marker date="1560256975121" expanded="true" signature="14505:15361" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/univariate_predictor/evaluation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1775">
+          <caret line="71" selection-start-line="71" selection-end-line="71" selection-end-column="19" />
+          <folding>
+            <marker date="1559474583374" expanded="true" signature="58:146" ph="..." />
+            <marker date="1559474583374" expanded="true" signature="1916:1917" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SampleManage/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="53" column="55" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
+        <state relative-caret-position="284">
+          <caret line="236" column="40" lean-forward="true" selection-start-line="236" selection-start-column="40" selection-end-line="236" selection-end-column="40" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1557988079873" expanded="true" signature="2776:2778" ph="..." />
-            <marker date="1557988079873" expanded="true" signature="4346:4739" ph="..." />
-            <marker date="1557988079873" expanded="true" signature="6690:6764" ph="..." />
+            <marker date="1560257618255" expanded="true" signature="3258:3260" ph="..." />
+            <marker date="1560257618255" expanded="true" signature="4969:4972" ph="..." />
+            <marker date="1560257618255" expanded="true" signature="12949:12954" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/detection/Iforest.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/detection/Nsigma.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <marker date="1559786323075" expanded="true" signature="184:215" ph="..." />
+            <marker date="1559786323075" expanded="true" signature="238:239" ph="..." />
+            <marker date="1559786323075" expanded="true" signature="238:247" ph="..." />
           </folding>
         </state>
       </provider>

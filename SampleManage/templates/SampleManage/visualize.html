@@ -10,36 +10,44 @@
 <div>
 <form name="visualizeform" action="{% url 'SampleManage:visualize' %}" method="post">
     {% csrf_token %}
-    nodename: <input type="text" id="nodenameid" name="nodename" value={{ nodename }}>
+{#    nodename: <input type="text" id="nodenameidd" name="nodenamee" value={{ nodename }}>#}
+{#    <select name="test">#}
+{#        <option value="0">sp</option>#}
+{#        <option value="1">su</option>#}
+{#    </select>#}
+
+{#    nodename:<select name="nodename" id="nodenameid">#}
+{#         {% for value in form.nodenames %}#}
+{#            <option value="{{ value }}"></option>#}
+{#         {% endfor %}#}
+{#    </select>#}
+
+    nodename:{{ form.nodenames }} {{ form.errors.nodenames.0 }}
     metric:{{ form.metrics }} {{ form.errors.metrics.0 }}
     <input type="submit" value="提交"/>
 </form>
 </div>
  <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
     <div id="main" style="width:1980px;height:850px;"></div>
-{#    <script>#}
-{#       var nodenames =document.getElementsByName('nodename').value;#}
-{#       alert(nodenames);#}
-{#    </script>#}
     <script type="text/javascript">
 
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('main'));
-
         // 指定图表的配置项和数据
         var datasets = {{ list|safe }};
+        var anonamlypoints = {{ anomalylist|safe }}
         var option = {
             title: {
             text: "{{ nodename }}-{{ metric }}"
             },
             legend: {},
             tooltip: {
-                trigger:'item',
+                trigger:'axis',
             },
             dataZoom:[{
                 type:'inside',
                 start: 0,
-                end: 10
+                end: 100,
             },{
         start: 0,
         end: 10,
@@ -64,19 +72,30 @@
             yAxis: {},
             // 声明多个 bar 系列，默认情况下，每个系列会自动对应到 dataset 的每一列。
             series: [
-                {type: 'line'},
+                {
+                    type: 'line'
+                },
+                {
+                    name:'异常值',
+                    data:anonamlypoints,
+                    type:'scatter'
+                }
             ]
         };
         // 使用刚指定的配置项和数据显示图表
-        option.xAxis.type = 'category'
+        option.xAxis.type = 'category';
         myChart.setOption(option);
         myChart.on('click', function (param) {
-            var nodename = document.getElementById('nodenameid').value;
+            {#var nodename = document.getElementById('nodenameidd').value;#}
+            var myselect = document.getElementById('nodenameid');
+            var index = myselect.selectedIndex;
+            var nodename = myselect.options[index].text;
             var timestamp = param.name;
-            var path = nodename+'/'+timestamp;
-            window.open((path+'/retag'));
+            var path = nodename + '/' + timestamp;
+            window.open((path + '/retag'));
+         });
             {#window.open ((path+'/retag'), '', 'height=200, width=700, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=n o, status=no')#}
-        });
+
        </script>
 </body>
 </html>
