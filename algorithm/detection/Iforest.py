@@ -10,3 +10,4 @@ class Iforest:
         self.df = df
         self.nodelists = nodelists
         self.metrics = metrics
+
