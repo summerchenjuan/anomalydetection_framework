@@ -4,59 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/algorithm/univariate_predictor/ewma.py" line="40" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40bc9996-ac5d-4a93-838e-6d0722aac28e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/configration.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/sql_setting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SampleManage/migrations/0002_metric_nodename.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SampleManage/migrations/0003_auto_20190523_1630.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SampleManage/migrations/0004_auto_20190524_1032.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SampleManage/migrations/0005_auto_20190528_1440.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SampleManage/migrations/0006_algorithm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SampleManage/migrations/0007_predictmethod.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SampleManage/migrations/0008_auto_20190609_2200.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SampleManage/migrations/0009_mulvisualize.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SampleManage/migrations/0010_auto_20190611_1057.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SampleManage/templates/SampleManage/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SampleManage/templates/SampleManage/mulvisualize.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SampleManage/templates/SampleManage/predict.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SampleManage/templates/SampleManage/train.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SampleManage/templates/SampleManage/visualizetest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SampleManage/templates/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SampleManage/tsne.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/detection/Iforest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/detection/Nsigma.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/detection/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/univariate_predictor/PredictModel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/univariate_predictor/evaluation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_model.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/jquery/jquery-3.4.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/jquery/jquery-3.4.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnomalyDetection/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnomalyDetection/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common_Sql/sql_setting.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleManage/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/SampleManage/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleManage/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/SampleManage/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleManage/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/SampleManage/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleManage/migrations/0002_auto_20190429_1327.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleManage/migrations/0003_auto_20190505_1616.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleManage/migrations/0004_auto_20190505_1619.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleManage/migrations/0005_metric.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleManage/migrations/0006_auto_20190505_1743.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleManage/migrations/0007_auto_20190516_1050.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleManage/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/SampleManage/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleManage/modelsql.py" beforeDir="false" afterPath="$PROJECT_DIR$/SampleManage/modelsql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleManage/templates/SampleManage/predict_visualize.html" beforeDir="false" afterPath="$PROJECT_DIR$/SampleManage/templates/SampleManage/predict_visualize.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleManage/templates/SampleManage/visualize.html" beforeDir="false" afterPath="$PROJECT_DIR$/SampleManage/templates/SampleManage/visualize.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleManage/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/SampleManage/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleManage/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/SampleManage/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/evaluation/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/evaluation/evaluation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/univariate_predictor/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/univariate_predictor/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/univariate_predictor/ewma.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/univariate_predictor/ewma.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/univariate_predictor/lstm.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/univariate_predictor/lstm.py" afterDir="false" />
-    </list>
+    <list default="true" id="40bc9996-ac5d-4a93-838e-6d0722aac28e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,8 +118,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/algorithm/detection/Nsigma.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="236">
+              <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
               <folding>
                 <marker date="1559786323075" expanded="true" signature="184:215" ph="..." />
                 <marker date="1559786323075" expanded="true" signature="238:239" ph="..." />
@@ -700,6 +648,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49825174" visible="true" weight="0.21641791" />
       <window_info id="Structure" order="1" sideWeight="0.50174826" side_tool="true" weight="0.22647887" />
@@ -1099,8 +1048,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithm/detection/Nsigma.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="236">
+          <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
           <folding>
             <marker date="1559786323075" expanded="true" signature="184:215" ph="..." />
             <marker date="1559786323075" expanded="true" signature="238:239" ph="..." />
