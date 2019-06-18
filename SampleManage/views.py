@@ -7,7 +7,8 @@ from django.contrib.auth.decorators import  login_required
 import json
 from .forms import PriSampleForm,VisualizeForm,PredictVisForm,TrainForm,MulvisualizeForm
 from .modelsql import modelsql
-from algorithm.univariate_predictor.lstm import LSTM_class,LSTM_mulnodename_class,LSTM_mul_class
+from algorithm.univariate_predictor.lstm import LSTM_class,LSTM_mulnodename_class,LSTM_mul_class,LSTM_mul_es_class
+from algorithm.detection.Iforest import Iforest
 from algorithm.univariate_predictor.ewma import EWMA_class
 import datetime
 from algorithm.univariate_predictor.evaluation import evaluation
@@ -228,13 +229,37 @@ def train(request):
             trainstart = form.clean()['trainstart']
             trainend = form.clean()['trainend']
             alogrithm = form.clean()['algorithm']
-            df = modelsql(ProSample).select_data_nodelists(nodelists=nodelists,start=trainstart,end=trainend)
+
             if (alogrithm == '1'):
+                df = modelsql(ProSample).select_data_nodelists(nodelists=nodelists, start=trainstart, end=trainend)
                 # modelclass = LSTM_mulnodename_class(df=df,metric=metric,train_start=trainstart,train_end=trainend,nodelists=nodelists)
                 modelclass = LSTM_mul_class(df=df, metrics=metrics, premetrics=premetrics,nodelists=nodelists)
                 Train_data_X, Train_data_Y = modelclass.create_train_data()
                 model = modelclass.train(Train_data_X=Train_data_X,Train_data_Y=Train_data_Y)
                 # modelclass.save(model)
+
+            elif(alogrithm == '2'):
+                df = modelsql(ProSample).select_data_nodelists(nodelists=nodelists, start=trainstart, end=trainend)
+                modelclass = Iforest(df=df,metrics=metrics,nodelists=nodelists)
+                Train_Data = modelclass.create_train_data()
+                model = modelclass.train(Train_Data)
+
+            # elif(alogrithm == '3'):
+            #     modelclass = LSTM_mul_es_class(metrics=metrics, premetrics=premetrics, nodelists=nodelists,train_start=trainstart,train_end=trainend)
+            #     Train_data_X, Train_data_Y = modelclass.create_train_data()
+            #     model = modelclass.train(Train_data_X=Train_data_X, Train_data_Y=Train_data_Y)
+            #     modelclass.save(model)
+
+                # modelclass = LSTM_mul_es_class(metrics=metrics, premetrics=premetrics, nodelists=nodelists,
+                #                                train_start=trainstart, train_end=trainend)
+                # nodename = modelclass.nodelists[0]
+                # Train_data_X, Train_data_Y = modelclass.create_train_data_onenode(nodename)
+                # model = modelclass.train(Train_data_X=Train_data_X,Train_data_Y=Train_data_Y)
+                # for nodename in modelclass.nodelists[1:]:
+                #      Train_data_X,Train_data_Y = modelclass.create_train_data_onenode(nodename)
+                #      model = modelclass.fit(model=model,Train_data_X=Train_data_X, Train_data_Y=Train_data_Y)
+                # modelclass.save(model)
+
             print(nodelists,trainstart,trainend,type(alogrithm))
     return render(request,'SampleManage/train.html',context)
 
