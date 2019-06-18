@@ -7,7 +7,8 @@ import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 from keras.models import load_model
 from keras.preprocessing.sequence import TimeseriesGenerator
-
+from esconn import esinteracton
+import time
 class LSTM_class:
     def __init__(self,df,metric,start,end,train_start,train_end,timesteps):
         self.df = df
@@ -413,6 +414,120 @@ class LSTM_mul_class:
         return target_df.values
 
 
+class LSTM_mul_es_class:
+    def __init__(self,nodelists,metrics, premetrics, test_start=None, test_end=None, train_start=None, train_end=None,
+                 timesteps=12,
+                 path='D://IHEP/chenj/anomaly/sqlsave/modelpath/my_mul_es_model.h5', epochs=10, batch_size=128, verbose=2,
+                 validation_split=0.1, shuffle=True):
+        self.metrics = metrics
+        self.premetrics = premetrics
+        self.test_start = test_start
+        self.test_end = test_end
+        self.train_start = train_start
+        self.train_end = train_end
+        self.timesteps = timesteps
+        self.path = path
+        self.nodelists = nodelists
+        self.epochs = epochs
+        self.batch_size = batch_size
+        self.verbose = verbose
+        self.validation_split = validation_split
+        self.shuffle = shuffle
+
+    def create_train_data_onenode(self,nodename):
+        """
+        对单个nodename进行model训练阶段需要的输入和输出数据的构建
+        :param nodename:
+        :return:
+        """
+        train_num = 0
+        Train_Data_X = []
+        Train_Data_Y = []
+        print(self.train_start.timetuple(),type(self.train_start.timetuple()))
+        starttime = int(round(time.mktime(self.train_start.timetuple()))*1000)
+        endtime = int(round(time.mktime(self.train_end.timetuple()))*1000)
+        print(starttime,endtime)
+        dfone = esinteracton.search_nodename_timestamp_dataframe(nodename=nodename,starttime=starttime,endtime=endtime,metrics=self.metrics)
+        data = self.getTrainData(dfone)
+        targets = self.getTraintarget(dfone)
+        scaler1 = MinMaxScaler(feature_range=(0, 1))
+        data = scaler1.fit_transform(data)
+        scaler2 = MinMaxScaler(feature_range=(0, 1))
+        targets = scaler2.fit_transform(targets)
+        data_generator = TimeseriesGenerator(data, targets, length=self.timesteps, batch_size=1)
+        for i in range(len(data_generator)):
+            X, Y = data_generator[i]
+            index_nan = np.where(np.isnan(X))[0]
+            X = np.delete(X, index_nan, axis=0)
+            Y = np.delete(Y, index_nan, axis=0)
+            if (train_num == 0):
+                Train_Data_X = X
+                Train_Data_Y = Y
+                train_num = train_num + 1
+            else:
+                Train_Data_X = np.concatenate((Train_Data_X, X))
+                Train_Data_Y = np.concatenate((Train_Data_Y, Y))
+
+        return  Train_Data_X,Train_Data_Y
+
+    def create_train_data(self):
+        """
+        将每个nodename中进行lstm 训练阶段输入和输出数据进行合并
+        :return:
+
+        """
+        Train_Data_X ,Train_Data_Y = self.create_train_data_onenode(self.nodelists[0])
+        if(len(self.nodelists) > 0):
+            for nodename in self.nodelists[1:]:
+                X,Y = self.create_train_data_onenode(nodename)
+                Train_Data_X = np.concatenate((Train_Data_X, X))
+                Train_Data_Y = np.concatenate((Train_Data_Y, Y))
+        return Train_Data_X, Train_Data_Y
+
+    def fit(self,model,Train_data_X,Train_data_Y):
+        model.fit(Train_data_X,Train_data_Y,epochs=self.epochs, batch_size=self.batch_size,
+                            verbose=self.verbose,
+                            validation_split=self.validation_split, shuffle=self.shuffle)
+        return model
+
+    def train(self,Train_data_X,Train_data_Y):
+        backend.clear_session()
+        model = Sequential()
+        model.add(LSTM(128, input_shape=(Train_data_X.shape[1], Train_data_X.shape[2])))
+        model.add(Dense(Train_data_X.shape[2]))
+        model.compile(loss='mae', optimizer='adam')
+        model.save("D://IHEP/chenj/anomaly/sqlsave/modelpath/my_mul_test_model.h5")
+        history = model.fit(Train_data_X, Train_data_Y, epochs=self.epochs, batch_size=self.batch_size,
+                            verbose=self.verbose,
+                            validation_split=self.validation_split, shuffle=self.shuffle)
+        return model
+
+
+    # 保存为hdf5文件
+    def save(self, model):
+        """
+        保存训练好的模型
+        :param
+        model:train中训练好的模型
+        """
+        model.save(self.path)
+
+    def load(self):
+        """
+        从hdf5文件加载模型
+        :return: 加载的模型
+        """
+        backend.clear_session()
+        model = load_model(self.path)
+        return model
+
+    def getTrainData(self,dataframe):
+        data_df = dataframe[self.metrics]
+        return data_df.values
+
+    def getTraintarget(self,dataframe):
+        target_df =  dataframe[self.premetrics]
+        return target_df.values
 
 
 
