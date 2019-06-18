@@ -158,7 +158,7 @@ class TrainForm(Form):
                                                              'step': '01'}))
 
     algorithm_chioce_list = []
-    lists = Algorithm.objects.filter(algorithmtype=0,istrain=1).values('algorithmname')
+    lists = Algorithm.objects.filter(istrain=1).values('algorithmname')
     for i in range(len(lists)):
         choice = (i+1, lists[i]['algorithmname'])
         algorithm_chioce_list.append(choice)
