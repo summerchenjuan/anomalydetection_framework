@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% block title %}
+    <title>检测结果可视化</title>
+{% endblock %}
+{% block mainbody %}
+<div style="height: 750px;width: 1400px;margin: auto;top: 0;left: 0;right:0;bottom:0">
+    <div style="height:100%;width: 19%;float: left">
+       <label style="font-size: 16px">请选择检测条件：</label>
+        <form action = "{%url 'SampleManage:detectes' %}" method="post">
+          {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="提交">
+        </form>
+    </div>
+<div id="main" style="height:100%;width: 80%;float:right"></div>
+</div>
+<script type="text/javascript">
+    var mycharts = echarts.init(document.getElementById('main'));
+    var x = {{ x|safe}};
+    var data = {{ y|safe }};
+    var predictdata = {{ z|safe }};
+    var  error = {{ e|safe }};
+    var anomalypoints = {{ anomalypoints|safe }};
+    var anomalyscore = {{ anomalyscore|safe }};
+    var option = {
+         title: {
+            text: "{{ nodename }}-{{ metric }}"
+            },
+            legend: {
+             data:['真实值','预测值','偏差','异常候选值','异常分数'],
+            },
+            tooltip: {
+                trigger:'axis',
+            },
+            dataZoom:[{
+                type:'inside',
+                start: 0,
+                end: 100,
+            },
+            {
+            start: 0,
+            end: 10,
+            handleSize: '80%',
+            handleStyle: {
+                color: '#fff',
+                shadowBlur: 3,
+                shadowColor: 'rgba(0, 0, 0, 0.6)',
+                shadowOffsetX: 2,
+                shadowOffsetY: 2
+             }
+            }],
+            xAxis: {
+                type: 'category',
+                data: x
+            },
+            yAxis: [{
+                type: 'value'
+            },
+                {
+                    type:'value'
+                 }
+                ],
+            series: [
+                {
+                    name:'真实值',
+                    data: data,
+                    type: 'line',
+                    yAxisIndex:0
+                    {#markPoint:{#}
+                    {#    symbol:'circle',#}
+                    {#    symbolSize:10,#}
+                    {#    label:{#}
+                    {#        show:false,#}
+                    {#    },#}
+                    {#    itemStyle:{#}
+                    {#        color:rgb(128,0,0)#}
+                    {##}
+                    {#    data:anomalymarkpoints#}
+                    {#    },#}
+                },
+                {
+                    name:'预测值',
+                    data: predictdata,
+                    type:'line',
+                    yAxisIndex:0
+                },
+                {
+                    name:'偏差',
+                    data:error,
+                    type:'line',
+                    yAxisIndex:0
+                },
+                {
+                    name:'异常候选值',
+                    data :anomalypoints,
+                    type:'scatter',
+                    yAxisIndex:0
+                },
+                {
+                    name:'异常分数',
+                    data:anomalyscore,
+                    type:'line',
+                    yAxisIndex:1
+                }
+            ],
+};
+    mycharts.setOption(option);
+    mycharts.on('click', function (param) {
+            var myselect = document.getElementById('nodenameid');
+            var index = myselect.selectedIndex;
+            var nodename = myselect.options[index].text;
+            var timestamp = param.name;
+            var path = nodename + '/' + timestamp;
+            window.open((path + '/retag'));
+            {#window.open ((path+'/retag'), '', 'height=200, width=700, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=n o, status=no')#}
+        });
+</script>
+{% endblock %}
