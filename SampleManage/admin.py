@@ -1,6 +1,6 @@
 from django.contrib import admin
 # Register your models here.
-from .models import PriSample,Metric,Nodename,ProSample
+from .models import PriSample,Metric,Nodename,ProSample,PredictMethod,DetectMethod
 from django.http import HttpResponseRedirect
 from django.urls import include, path
 
@@ -40,8 +40,17 @@ class ProSampleAdmin(admin.ModelAdmin):
     def delete(self,request,queryset):
         queryset.delete()
 
+class PredictMethodAdmain(admin.ModelAdmin):
+    list_display = ('methodname','algorithm','paramvalue')
+
+class DetectMethodAdmin(admin.ModelAdmin):
+    list_display = ('methodname','algorithm','paramvalue')
+
 #
-admin.site.register(PriSample,PriSampleAdmin)
+
+# admin.site.register(PriSample,PriSampleAdmin)
+# admin.site.register(ProSample,ProSampleAdmin)
 admin.site.register(Metric,MetricAdmin)
 admin.site.register(Nodename,NodenameAdmin)
-admin.site.register(ProSample,ProSampleAdmin)
+admin.site.register(PredictMethod,PredictMethodAdmain)
+admin.site.register(DetectMethod,DetectMethodAdmin)

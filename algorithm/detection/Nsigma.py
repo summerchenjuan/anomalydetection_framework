@@ -11,8 +11,12 @@ class Nsigma:
         return modelname
 
     def thresholding(self):
-        mean = np.mean(self.series)
-        std = np.std(self.series)
+        series_de_nan = self.series
+        series_de_nan = np.delete(series_de_nan,np.where(np.isnan(series_de_nan))[0])
+        # mean = np.mean(self.series)
+        # std = np.std(self.series)
+        mean = np.mean(series_de_nan)
+        std = np.std(series_de_nan)
         threshold = mean + self.N * std
         return threshold
 

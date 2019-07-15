@@ -121,10 +121,18 @@ class Algorithm(models.Model):
 class PredictMethod(models.Model):
     methodname = models.CharField(max_length=50)
     algorithm = models.CharField(max_length=50)
-    paramvalue = models.CharField(max_length=300)
+    paramvalue = models.CharField(max_length=3000)
     path = models.CharField(max_length=100)
     class Meta:
         db_table = 'predictmethod'
+
+class DetectMethod(models.Model):
+    methodname = models.CharField(max_length=50)
+    algorithm = models.CharField(max_length=50)
+    paramvalue = models.CharField(max_length=3000)
+    path = models.CharField(max_length=100)
+    class Meta:
+        db_table = 'detectmethod'
 
 class Mulvisualize(models.Model):
     dedimensionname = models.CharField(max_length=50,primary_key=True)

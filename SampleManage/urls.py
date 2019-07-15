@@ -8,8 +8,13 @@ urlpatterns = [
      path('resultechart',views.resultechart,name = 'resultechart'),
      path('testform',views.testform,name='testform'),
      path('visualize',views.visualize,name='visualize'),
+     path('visualizees', views.visualizees, name='visualizees'),
      path('predict',views.predict,name='predict'),
+     path('detectes',views.detectes,name='detectes'),
+     path('predictes',views.predictes,name='predictes'),
      path('<path:pathtest>/retag',views.retag,name='retag'),
+     path('<path:pathtest>/retages',views.retages,name='retages'),
      path('train',views.train,name='train'),
-     path('mulvisualize',views.mulvisualize,name='mulvisualize')
+     path('mulvisualize',views.mulvisualize,name='mulvisualize'),
+
 ]

@@ -1,19 +1,37 @@
+{% extends "base.html" %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    {% block maintitle %}
     <title>模型训练</title>
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link href="https://cdn.bootcss.com/bootstrap-select/1.12.1/css/bootstrap-select.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+    {% endblock %}
+
+
 </head>
 <body>
+{% block mainbody %}
+<div style="height: 750px;width: 1400px;margin: auto;top: 0;left: 0;right:0;bottom:0">
+<div style="height:100%;width: 19%;float: left">
+    <label style="font-size: 16px">请选择训练条件：</label>
 <form name="trainform" action="{% url 'SampleManage:train' %}" method="post">
     {% csrf_token %}
-    {{ form.as_table}}
+    {{ form.as_p}}
+{#    {{ form.nodename }}{{ form.metrics }}{{ form.premetrics }}#}
+{#    <br />#}
+{#    {{ form.trainstart }}{{ form.trainend }}#}
+{#    <br />#}
+{#    {{ form.algorithm }}{{ form.parameters }}#}
+
     <input type="submit" value="开始训练"/>
 </form>
+</div>
+</div>
+{% endblock %}
 </body>
 </html>

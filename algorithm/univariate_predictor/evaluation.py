@@ -55,12 +55,12 @@ class evaluation:
 
     #平均百分误差
     def MPE(self):
-        s = ((self.X-self.Y)/self.Y).mean()
+        s = ((self.X-self.Y)/self.X).mean()
         return s
 
     #平均绝对值百分误差
     def MAPE(self):
-        s = np.fabs((self.X-self.Y)/self.Y).mean()
+        s = np.fabs((self.X-self.Y)/self.X).mean()
         return s
 
 if __name__ == '__main__':

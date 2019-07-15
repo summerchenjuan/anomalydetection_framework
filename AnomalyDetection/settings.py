@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bootstrap_datepicker_plus'
 ]
 
 MIDDLEWARE = [
@@ -159,3 +160,8 @@ STATICFILES_DIRS=(
 
 APPEND_SLASH=False
 LOGIN_URL = 'admin/'
+
+#add
+BOOTSTRAP3 = {
+    'include_jquery': True,
+}

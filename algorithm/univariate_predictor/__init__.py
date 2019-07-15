@@ -1,1 +1,1 @@
-__all__ = ['ewma','lstm']
+__all__ = ['ewma','lstm','model_setting']
