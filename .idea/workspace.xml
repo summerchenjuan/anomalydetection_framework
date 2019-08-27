@@ -6,16 +6,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40bc9996-ac5d-4a93-838e-6d0722aac28e" name="Default Changelist" comment="iforest">
-      <change afterPath="$PROJECT_DIR$/SampleManage/templates/SampleManage/comparees.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/feature/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/feature/fitting_feature.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/feature/stastic_feature.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PIC/人机交互界面.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SampleManage/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/SampleManage/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleManage/templates/SampleManage/comparees.html" beforeDir="false" afterPath="$PROJECT_DIR$/SampleManage/templates/SampleManage/comparees.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SampleManage/templates/SampleManage/testform.html" beforeDir="false" afterPath="$PROJECT_DIR$/SampleManage/templates/SampleManage/testform.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SampleManage/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/SampleManage/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SampleManage/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/SampleManage/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SampleManage/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/SampleManage/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/feature/fitting_feature.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/feature/fitting_feature.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/feature/stastic_feature.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/feature/stastic_feature.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/algorithm/univariate_predictor/lstm.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/univariate_predictor/lstm.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/esconn/esinteracton.py" beforeDir="false" afterPath="$PROJECT_DIR$/esconn/esinteracton.py" afterDir="false" />
     </list>
@@ -136,7 +136,7 @@
         <entry file="file://$PROJECT_DIR$/algorithm/detection/Iforest.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="62">
-              <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+              <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
                 <marker date="1562852013381" expanded="true" signature="482:678" ph="..." />
@@ -191,11 +191,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/comparees.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="68" column="29" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
+            <state relative-caret-position="-789">
+              <caret line="36" column="32" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="32" />
               <folding>
                 <element signature="e#330#410#0#HTML" expanded="true" />
                 <element signature="e#421#463#0#HTML" expanded="true" />
@@ -207,7 +207,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/esconn/esinteracton.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
@@ -259,8 +259,8 @@
       <find>main</find>
       <find>VisualizeESForm</find>
       <find>source1</find>
-      <find>visualizees</find>
       <find>mean_abs_change</find>
+      <find>visualizees</find>
     </findStrings>
     <replaceStrings>
       <replace>DecimalField(max_digits=15,decimal_places=3,null=True)</replace>
@@ -339,7 +339,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1433" />
@@ -361,41 +361,7 @@
             <path>
               <item name="AnomalyDetection" type="b2602c69:ProjectViewProjectNode" />
               <item name="AnomalyDetection" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnomalyDetection" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AnomalyDetection" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="feature" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnomalyDetection" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AnomalyDetection" type="462c0819:PsiDirectoryNode" />
-              <item name="AnomalyDetection" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnomalyDetection" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AnomalyDetection" type="462c0819:PsiDirectoryNode" />
-              <item name="esconn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnomalyDetection" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AnomalyDetection" type="462c0819:PsiDirectoryNode" />
-              <item name="SampleManage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnomalyDetection" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AnomalyDetection" type="462c0819:PsiDirectoryNode" />
-              <item name="SampleManage" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnomalyDetection" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AnomalyDetection" type="462c0819:PsiDirectoryNode" />
-              <item name="SampleManage" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="SampleManage" type="462c0819:PsiDirectoryNode" />
+              <item name="PIC" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -640,15 +606,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49825174" visible="true" weight="0.21108742" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49825174" visible="true" weight="0.21108742" />
       <window_info id="Structure" order="1" sideWeight="0.50174826" side_tool="true" weight="0.22647887" />
       <window_info id="Favorites" order="2" sideWeight="0.5008264" side_tool="true" weight="0.21231672" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3066089" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3066089" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1011,20 +977,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/comparees.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="68" column="29" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
-          <folding>
-            <element signature="e#330#410#0#HTML" expanded="true" />
-            <element signature="e#421#463#0#HTML" expanded="true" />
-            <element signature="e#867#909#0#HTML" expanded="true" />
-            <element signature="e#935#976#0#HTML" expanded="true" />
-            <element signature="e#1000#1041#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Anaconda3/envs/django2/Lib/site-packages/statsmodels/distributions/edgeworth.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -1045,7 +997,7 @@
     <entry file="file://$PROJECT_DIR$/algorithm/detection/Iforest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
-          <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
             <marker date="1562852013381" expanded="true" signature="482:678" ph="..." />
@@ -1059,25 +1011,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithm/features.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SampleManage/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="132" selection-start-line="132" selection-end-line="132" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#14435#14459#0" />
-            <element signature="e#21974#26046#0" />
-            <element signature="e#26237#26600#0" />
-            <element signature="e#26643#34073#0" />
-            <marker date="1566394617944" expanded="true" signature="3681:3682" ph="..." />
-            <marker date="1566394617944" expanded="false" signature="9774:9777" ph="..." />
-            <marker date="1566394617944" expanded="true" signature="21805:21810" ph="..." />
-            <marker date="1566394617944" expanded="true" signature="21899:25979" ph="..." />
-            <marker date="1566394617944" expanded="true" signature="34147:34152" ph="..." />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithm/feature/stastic_feature.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1099,6 +1032,39 @@
           <caret line="312" column="103" selection-start-line="312" selection-start-column="103" selection-end-line="312" selection-end-column="103" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleManage/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#14435#14459#0" />
+            <element signature="e#21974#26046#0" />
+            <element signature="e#26237#26600#0" />
+            <element signature="e#26643#34073#0" />
+            <marker date="1566394617944" expanded="true" signature="3681:3682" ph="..." />
+            <marker date="1566394617944" expanded="false" signature="9774:9777" ph="..." />
+            <marker date="1566394617944" expanded="true" signature="21805:21810" ph="..." />
+            <marker date="1566394617944" expanded="true" signature="21899:25979" ph="..." />
+            <marker date="1566394617944" expanded="true" signature="34147:34152" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleManage/templates/SampleManage/comparees.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-789">
+          <caret line="36" column="32" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="32" />
+          <folding>
+            <element signature="e#330#410#0#HTML" expanded="true" />
+            <element signature="e#421#463#0#HTML" expanded="true" />
+            <element signature="e#867#909#0#HTML" expanded="true" />
+            <element signature="e#935#976#0#HTML" expanded="true" />
+            <element signature="e#1000#1041#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
