@@ -16,5 +16,6 @@ urlpatterns = [
      path('<path:pathtest>/retages',views.retages,name='retages'),
      path('train',views.train,name='train'),
      path('mulvisualize',views.mulvisualize,name='mulvisualize'),
-
+     path('testform',views.testform,name='testform'),
+     path('comparees',views.comparees,name='comparees')
 ]

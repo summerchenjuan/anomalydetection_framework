@@ -32,6 +32,7 @@ class TagForm(Form):
 
 
 
+#数据可视化
 class VisualizeForm(Form):
     #nodename选择
     nodelist_choices_list = []
@@ -434,3 +435,43 @@ class DetectVisesForm(Form):
         widget=forms.widgets.TextInput(
             attrs={'id': 'detectparam', 'name': 'detectparam', 'value': 'default', 'class': 'form-control', 'style':'width:220px'}))
 
+
+class CompareESForm(Form):
+    #nodename选择
+    nodelist_choices_list = []
+    for value in Nodename.objects.values_list('nodename'):
+        choice = (value[0],value[0])
+        nodelist_choices_list.append(choice)
+    nodelist_choices = tuple(nodelist_choices_list)
+    nodenames = fields.CharField(
+        widget = forms.widgets.Select(choices=nodelist_choices,attrs={
+            'id':'nodenameid',
+            'name':'nodename',
+            'class': "selectpicker"
+        })
+    )
+
+    #metric选择
+    metric_choices_list = []
+    for  value in Metric.objects.values_list('metric'):
+        choice = ( value[0],value[0])
+        metric_choices_list.append(choice)
+    metric_choices = tuple(metric_choices_list)
+    metrics = fields.CharField(
+    initial='bytes_in_value',
+        #widget=widgets.Select(choices=((1, 'bytes_in_value'), (2, 'bytes_out_value'),))  # 插件表现形式为下拉框
+        widget = forms.widgets.Select(choices=metric_choices,attrs={
+            'id':'metricsid',
+            'name':'metrics',
+            'class': "selectpicker"
+        })
+        )
+
+    timestamp = forms.SplitDateTimeField(
+        initial=timezone.now(),
+        widget=forms.widgets.SplitDateTimeWidget(attrs={'name': 'teststart'},
+                                                 date_attrs={'type': 'date', 'class': 'form-control',
+                                                             'style': 'width:220px'},
+                                                 time_attrs={'type': 'time', 'class': 'form-control',
+                                                             'style': 'width:220px',
+                                                             'step': '01'}))

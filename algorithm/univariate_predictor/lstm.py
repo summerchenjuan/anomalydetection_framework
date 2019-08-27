@@ -659,7 +659,7 @@ class LSTM_mul_class:
 class LSTM_mul_es_class(TrainModel):
     def __init__(self,nodelists=None,metrics=None,train_start=None,train_end=None,test_start=None,test_end=None,nodename=None,
                  modelname=None,premetrics=None,
-                 timesteps=12,epochs=100, batch_size=128, verbose=1,validation_split=0.1,seed=42, shuffle=True):
+                 timesteps=12,epochs=100, batch_size=128, verbose=1,validation_split=0.1,seed=42, shuffle=True,nlayers=2):
         super(LSTM_mul_es_class,self).__init__(nodelists,metrics,train_start,train_end,test_start,test_end,nodename)
         self.premetrics = premetrics
         self.timesteps = int(timesteps)
@@ -670,6 +670,7 @@ class LSTM_mul_es_class(TrainModel):
         self.validation_split = float(validation_split)
         self.seed = int(seed)
         self.shuffle = shuffle
+        self.nlayers = nlayers
 
     def create_train_data_onenode(self,nodename,scalerdata,scalertargets):
         """
@@ -732,7 +733,8 @@ class LSTM_mul_es_class(TrainModel):
         backend.clear_session()
         model = Sequential()
         model.add(LSTM(units=128, input_shape=(self.timesteps, len(self.metrics)),return_sequences=True))
-        model.add(LSTM(units=128))
+        for i in range(self.nlayers-1):
+            model.add(LSTM(units=128))
         model.add(Dense(len(self.premetrics)))
         adam = Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=1e-08)
         model.compile(loss='mae', optimizer=adam, metrics=['mae','accuracy'])

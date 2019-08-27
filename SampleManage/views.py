@@ -5,7 +5,7 @@ import pandas as  pd
 from sqlalchemy import create_engine
 from django.contrib.auth.decorators import  login_required
 import json
-from .forms import PriSampleForm,VisualizeForm,VisualizeESForm,PredictVisForm,TrainForm,MulvisualizeForm,PredictVisesForm,TagForm,DetectVisesForm
+from .forms import PriSampleForm,VisualizeForm,VisualizeESForm,PredictVisForm,TrainForm,MulvisualizeForm,PredictVisesForm,TagForm,DetectVisesForm,CompareESForm
 from .modelsql import modelsql
 from algorithm.univariate_predictor.lstm import LSTM_mul_es_class
 from algorithm.detection.Iforest import Iforest_class
@@ -87,9 +87,6 @@ def upload(request):
 def resultechart(request):
     return render(request,'SampleManage/resultechart.html')
 
-
-def testform(request):
-        return render(request,'SampleManage/testform.html')
 
 #可视化元数据
 def visualize(request):
@@ -589,7 +586,6 @@ def detectes(request):
             testend = obj.clean()['detectend']
             metric = obj.clean()['metric']
             predictmethod  = obj.clean()['predictmethod']
-
             if(predictmethod == 'None'):
                 detectmethod = obj.clean()['detectmethod']
                 if('Iforest' in detectmethod):
@@ -722,3 +718,74 @@ def detectes(request):
         else:
             errors = obj.errors
     return render(request,'SampleManage/detect_visualizees.html',content)
+
+def testform(request):
+    if(request.method == 'POST'):
+        pass
+    return render(request,'SampleManage/testform.html')
+
+
+def comparees(request):
+    edatasets1 = []
+    edatasets2 = []
+    edatasets3 = []
+    maxvalue = 0
+    minvalue = 0
+    nodename = ''
+    metric = ''
+    obj = CompareESForm()
+    if request.method == "POST":
+        obj = CompareESForm(request.POST,request.FILES)
+        if obj.is_valid():
+            nodename = obj.clean()['nodenames']
+            metric = obj.clean()['metrics']
+            timestamp = obj.clean()['timestamp']
+            metriclist = [metric]
+            end1 = int(round(time.mktime(timestamp.timetuple())) * 1000)
+            start1 = int(round(time.mktime((timestamp-datetime.timedelta(hours=3)).timetuple()) * 1000))
+            end2 = int(round(time.mktime((timestamp-datetime.timedelta(hours=24)).timetuple()) * 1000))
+            start2 = int(round(time.mktime((timestamp-datetime.timedelta(hours=27)).timetuple()) * 1000))
+            end3 = int(round(time.mktime((timestamp - datetime.timedelta(hours=24*7)).timetuple()) * 1000))
+            start3 = int(round(time.mktime((timestamp - datetime.timedelta(hours=24*7+3)).timetuple()) * 1000))
+            maxvalue = 0
+            minvalue = float('inf')
+            source1 = esinteracton.search_nodename_timestamp_dataframe(nodename=nodename,starttime=start1,endtime=end1,metrics=metriclist)
+            #当前三小时的值
+            edatasets1 = [['timestamp', metric]]
+            for i in range(len(source1)):
+                edataset = []
+                edataset.append(source1['timestamp'][i].strftime('%Y-%m-%d %H:%M:%S'))
+                edataset.append(source1[metric][i])
+                maxvalue = max(maxvalue,source1[metric][i])
+                minvalue = min(minvalue, source1[metric][i])
+                edatasets1.append(edataset)
+
+            #前一天的值
+            source2 = esinteracton.search_nodename_timestamp_dataframe(nodename=nodename, starttime=start2,
+                                                                       endtime=end2, metrics=metriclist)
+            edatasets2 = [['timestamp', metric]]
+            for i in range(len(source2)):
+                edataset = []
+                edataset.append(source2['timestamp'][i].strftime('%Y-%m-%d %H:%M:%S'))
+                edataset.append(source2[metric][i])
+                maxvalue = max(maxvalue, source2[metric][i])
+                minvalue = min(minvalue, source2[metric][i])
+                edatasets2.append(edataset)
+
+            #前一周的值
+            source3 = esinteracton.search_nodename_timestamp_dataframe(nodename=nodename, starttime=start3,
+                                                                       endtime=end3, metrics=metriclist)
+            edatasets3 = [['timestamp', metric]]
+            for i in range(len(source3)):
+                edataset = []
+                edataset.append(source3['timestamp'][i].strftime('%Y-%m-%d %H:%M:%S'))
+                edataset.append(source3[metric][i])
+                maxvalue = max(maxvalue, source3[metric][i])
+                minvalue = min(minvalue, source3[metric][i])
+                edatasets3.append(edataset)
+
+        else:
+            errors = obj.errors
+        return render(request,'SampleManage/comparees.html',{'list1':json.dumps(edatasets1),'list2':json.dumps(edatasets2),'list3':json.dumps(edatasets3),'max':maxvalue,'min':minvalue,'nodename':nodename,'metric':metric,'form':obj,})
+    else:
+        return render(request,'SampleManage/comparees.html',{'list1':json.dumps(edatasets1),'list2':json.dumps(edatasets2),'list3':json.dumps(edatasets3),'max':maxvalue,'min':minvalue,'nodename':nodename,'metric':metric,'form':obj,})

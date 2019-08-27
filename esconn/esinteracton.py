@@ -50,10 +50,11 @@ def search_nodename_timestamp(nodename, starttime, endtime, metrics):
     scroll_id = queryData["_scroll_id"]
     total = queryData["hits"]["total"]
     for i in range(int(total / 1000)):
-        res = es.scroll(scroll_id=scroll_id, scroll='5m')  # scroll参数必须指定否则会报错
+        es.transport.send_get_body_as = 'POST'
+        # res = es.scroll(scroll_id=scroll_id, scroll='5m')  # scroll参数必须指定否则会报错
+        res = es.scroll(body={'scroll':'5m','scroll_id':scroll_id})
         mdata += res["hits"]["hits"]
     return mdata
-
 
 def search_bulk(index,query_json):
     """
@@ -69,7 +70,9 @@ def search_bulk(index,query_json):
     scroll_id = queryData["_scroll_id"]
     total = queryData["hits"]["total"]
     for i in range(int(total / 1000)):
-        res = es.scroll(scroll_id=scroll_id, scroll='5m')
+        #res = es.scroll(scroll_id=scroll_id, scroll='5m')
+        es.transport.send_get_body_as = 'POST'
+        res = es.scroll(body={'scroll': '5m', 'scroll_id': scroll_id})
         mdata += res["hits"]["hits"]
     return mdata
 
