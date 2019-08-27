@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{#{% load static %}#}
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <script src="{% static 'js/echarts.js' %}"></script>#}
+{#    <title>样本数据可视化</title>#}
+{#</head>#}
+{#<body>#}
+{% block title %}
+    <title>样本可视化</title>
+{% endblock %}
+{% block mainbody %}
+<div style="height: 750px;width: 1400px;margin: auto;top: 0;left: 0;right:0;bottom:0">
+    <div style="height:100%;width: 19%;float: left">
+       <label style="font-size: 16px">请选择查询条件：</label>
+        <form name="visualizeesform" action="{% url 'SampleManage:visualizees' %}" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="提交"/>
+        </form>
+    </div>
+
+ <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+{#<div id="main" style="width:1350px;height:700px;"></div>#}
+    <div id="main" style="height:100%;width: 80%;float:right"></div>
+</div>
+    <script type="text/javascript">
+
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+        // 指定图表的配置项和数据
+        var datasets = {{ list|safe }};
+        var option = {
+            title: {
+            text: "{{ nodename }}-{{ metric }}"
+            },
+            legend: {},
+            tooltip: {
+                trigger:'axis',
+            },
+            dataZoom:[{
+                type:'inside',
+                start: 0,
+                end: 100,
+            },{
+        start: 0,
+        end: 10,
+        handleSize: '80%',
+        handleStyle: {
+            color: '#fff',
+            shadowBlur: 3,
+            shadowColor: 'rgba(0, 0, 0, 0.6)',
+            shadowOffsetX: 2,
+            shadowOffsetY: 2
+        }
+    }],
+            dataset: {
+                // 提供一份数据。
+                source: datasets
+             },
+            // 声明一个 X 轴，类目轴（category）。默认情况下，类目轴对应到 dataset 第一列。
+            xAxis: {
+                type: 'time',
+            },
+            // 声明一个 Y 轴，数值轴。
+            yAxis: {},
+            // 声明多个 bar 系列，默认情况下，每个系列会自动对应到 dataset 的每一列。
+            series: [
+                {
+                    type: 'line'
+                },
+            ]
+        };
+        // 使用刚指定的配置项和数据显示图表
+        option.xAxis.type = 'category';
+        myChart.setOption(option);
+        myChart.on('click', function (param) {
+            {#var nodename = document.getElementById('nodenameidd').value;#}
+            var myselect = document.getElementById('nodenameid');
+            var index = myselect.selectedIndex;
+            var nodename = myselect.options[index].text;
+            var timestamp = param.name;
+            var path = nodename + '/' + timestamp;
+            window.open((path + '/retages'));
+         });
+            {#window.open ((path+'/retag'), '', 'height=200, width=700, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=n o, status=no')#}
+
+       </script>
+{% endblock %}
+{#</body>#}
+{#</html>#}
